@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car E-Commerce</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo h1 {
+            font-size: 24px;
+        }
+
+        header .links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        header .links a:hover {
+            color: #f0a500;
+        }
+
+        header .logout a {
+            color: #fff;
+            background-color: #f05454;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        header .logout a:hover {
+            background-color: #ff6347;
+        }
+
+        /* Main Section */
+        main {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        main h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Product List Styles */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(25% - 40px);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .product-item button {
+            background-color: #f0a500;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-item button:hover {
+            background-color: #d88c00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-item {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>IRONSHIELD</h1>
+            </div>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="logout">
+                <a href="/logout">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Our GARAGE</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://wallpapersafari.com/image/bmw-m3-hd-wallpaper.jpg" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <!-- <p>$20,000</p> -->
+                <button>Like</button>
+            </div>
+            <div class="product-item">
+                <img src="https://wallpapersafari.com/image/bmw-f30-wallpapers.jpg" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <!-- <p>$25,000</p> -->
+                <button>Like</button>
+            </div>
+            <div class="product-item">
+                <img src="https://wallpapersafari.com/image/bmw-e36-m3-wallpaper.jpg" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <!-- <p>$30,000</p> -->
+                <button>Like</button>
+            </div>
+            <div class="product-item">
+                <img src="https://wallpapersafari.com/image/bmw-m3-iphone-wallpaper.jpg" alt="Car 4">
+                <h3>Car Model 4</h3>
+                <!-- <p>$35,000</p> -->
+                <button>Like</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
